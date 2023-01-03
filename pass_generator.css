@@ -1,0 +1,169 @@
+body {
+  background-color: #333;
+  color: black;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  user-select: none;
+  background: url("Dark_Nature.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 500px;
+  background-color: rgba(144, 238, 144, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#copy_pass {
+  background-color: orange;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+label {
+  font-size: 18px;
+  line-height: 2rem;
+}
+
+#submit_btn {
+  background-color: darkorange;
+  color: black;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 25px;
+  width: 100%;
+  margin-top: 20px;
+  outline: none;
+}
+
+#password_number {
+  text-align: center;
+}
+
+#submit_btn:hover {
+  background-color: #333;
+  color: white;
+}
+
+.manage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form input {
+  float: right;
+}
+
+#show_password {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* Dialog box of Copy code */
+
+.container2 {
+  width: 400px;
+  background-color: #f3f3f3;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  animation: anim 0.4s ease;
+}
+
+@keyframes anim {
+  0% {
+    position: absolute;
+    top: -10%;
+  }
+
+  100% {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.container2 h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.container2 h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.container2 h5 {
+  font-size: 20px;
+  color: yellow;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: bolder;
+  background-color: green;
+}
+
+.container2 #ok {
+  background-color: darkblue;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 25px;
+  width: 25%;
+  margin-top: 20px;
+  outline: none;
+}
+
+#hidden {
+  display: none;
+}
