@@ -127,8 +127,7 @@ function copyTextValue() {
 // hide popup message of copied password
 
 const hidePopup = () => {
-  hidden.style.display = "none";
-  show_password.value = "";
+  window.location.reload(true);
 };
 
 /* if you don't take input or text area field and you take another tag like p,h1,etc..
